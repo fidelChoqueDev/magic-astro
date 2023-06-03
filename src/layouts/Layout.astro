@@ -1,5 +1,10 @@
 ---
 import Footer from "../components/Footer.astro";
+import MenuItemsView from "../components/MenuItemsView.astro";
+import MenuNavBar from "../components/MenuNavBar.astro";
+import Features from "../components/landing/Features.astro";
+import menuItems from "../data/menuItemsData";
+import About from "../pages/about.astro";
 import '../styles/Layout.css';
 
 interface Props{
@@ -20,6 +25,9 @@ const {title} = Astro.props;
 </head>
 <body>
   <main class="mx-auto container pt-7">
+    <MenuNavBar>
+      {menuItems.map( (item) => <MenuItemsView {...item} />)}
+    </MenuNavBar>
     <slot/>
   </main>
   <Footer/>

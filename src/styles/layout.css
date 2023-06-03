@@ -1,8 +1,4 @@
 body{
-  background-image: url("../../public/images/fondo_magica.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: rgba(92, 59, 29, 0.622);
   color: rgb(237, 230, 230);
 }
